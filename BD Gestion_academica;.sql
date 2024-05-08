@@ -19,7 +19,7 @@ create table departamento (
     codigo_departamento varchar(20) primary key,
     nombre varchar(100),
     jefe varchar(20),
-    foreign key (jefe) references profesor(dni)
+    foreign key (jefe) references profesor(dni_profesor)
 );
 
 create table asignatura (
@@ -28,7 +28,7 @@ create table asignatura (
     nombre varchar(100),
     caracter varchar(2),
     profesor_dni varchar(20),
-    foreign key (profesor_dni) references profesor(dni)
+    foreign key (profesor_dni) references profesor(dni_profesor)
 );
 
 create table calificacion (
@@ -39,7 +39,7 @@ create table calificacion (
     nota int,
     convocatoria varchar(20),
     foreign key (asignatura_codigo) references asignatura(codigo),
-    foreign key (alumno_dni) references alumno(dni)
+    foreign key (alumno_dni) references alumno(dni_alumno)
 );
 
 create table matricula (
@@ -48,7 +48,7 @@ create table matricula (
     convocatoria varchar(20),
     alumno_dni varchar(20),
     asignatura_codigo varchar(20),
-    foreign key (alumno_dni) references alumno(dni),
+    foreign key (alumno_dni) references alumno(dni_alumno),
     foreign key (asignatura_codigo) references asignatura(codigo)
 );
 
