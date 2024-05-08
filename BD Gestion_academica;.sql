@@ -3,14 +3,14 @@ create database Gestion_academica;
 use Gestion_academica;
 
 create table alumno (
-    dni varchar(20) primary key,
+    dni_alumno varchar(20) primary key,
     nombre varchar(50),
     apellido varchar(50),
     curso int
 );
 
 create table profesor (
-    dni varchar(20) primary key,
+    dni_profesor varchar(20) primary key,
     nombre varchar(50),
     apellido varchar(50),
 );
