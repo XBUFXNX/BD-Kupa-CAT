@@ -52,7 +52,6 @@ create table matricula (
     foreign key (asignatura_codigo) references asignatura(codigo)
 );
 
-
 -- Inserts para la tabla "alumno"
 INSERT INTO alumno (dni_alumno, nombre, apellido, curso) VALUES
 ('12345678A', 'Juan', 'Pérez', 1),
