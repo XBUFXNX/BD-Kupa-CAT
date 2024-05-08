@@ -54,14 +54,14 @@ create table matricula (
 
 
 -- Inserts para la tabla "alumno"
-INSERT INTO alumno (dni, nombre, apellido, curso) VALUES
+INSERT INTO alumno (dni_alumno, nombre, apellido, curso) VALUES
 ('12345678A', 'Juan', 'Pérez', 1),
 ('23456789B', 'María', 'García', 2),
 ('34567890C', 'Carlos', 'López', 3),
 ('45678901D', 'Ana', 'Martínez', 1);
 
 -- Inserts para la tabla "profesor"
-INSERT INTO profesor (dni, nombre, apellido) VALUES
+INSERT INTO profesor (dni_profesor, nombre, apellido) VALUES
 ('11111111X', 'Pedro', 'Sánchez'),
 ('22222222Y', 'Luisa', 'Gómez'),
 ('33333333Z', 'Miguel', 'Rodríguez');
