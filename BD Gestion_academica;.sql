@@ -12,7 +12,7 @@ create table alumno (
 create table profesor (
     dni_profesor varchar(20) primary key,
     nombre varchar(50),
-    apellido varchar(50),
+    apellido varchar(50)
 );
 
 create table departamento (
